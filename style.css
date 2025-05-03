@@ -1,0 +1,66 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 20px;
+    background-color: rgb(192, 234, 248);
+    color: #333;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  #secret {
+    background: #eee;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  #hoverText:hover {
+    color: blue;
+    font-weight: bold;
+    transition: 0.4s ease;
+  }
+  
+  .tabs .tab-content {
+    display: none;
+    margin-top: 10px;
+    
+  }
+  
+  .tabs .tab-content.active {
+    display: block;
+  }
+  
+  #galleryImage {
+    display: block;
+    width: 200px;
+    height: 300px;
+    margin: 10px 0;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  #galleryImage:hover {
+    transform: scale(1.05);
+  }
+  
+  input {
+    display: block;
+    margin: 8px 0;
+    padding: 8px;
+    width: 250px;
+  }
+  
+  #feedback {
+    color: red;
+    font-size: 0.9em;
+  }
+  

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Web Playground</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Interactive Bundle of Joy 🎉</h1>
+  </header>
+
+  <section>
+    <h2> Event Playground</h2>
+    <button id="clickBtn">Click Me!</button>
+    <p id="hoverText">Hover over me!</p>
+    <input type="text" id="keyInput" placeholder="Type something..." />
+    <div id="secret" ondblclick="secretAction()">Double-click me!</div>
+  </section>
+
+  <!-- Interactive Elements -->
+  <section>
+    <h2>🎮 Interactive Elements</h2>
+    <button id="colorToggleBtn">Toggle Color</button>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab" data-target="tab1">Tab 1</button>
+      <button class="tab" data-target="tab2">Tab 2</button>
+      <div id="tab1" class="tab-content active">This is content for Tab 1</div>
+      <div id="tab2" class="tab-content">This is content for Tab 2</div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery">
+      <img id="galleryImage" src="https://picsum.photos/200/300?random=1" alt="Gallery Image" />
+      <button id="nextImage">Next Image</button>
+    </div>
+  </section>
+
+  <!-- Form Validation -->
+  <section>
+    <h2>📋 Registration Form</h2>
+    <form id="registerForm" novalidate>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required placeholder="Enter your email" />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required minlength="8" placeholder="Min 8 characters" />
+
+      <span id="feedback"></span>
+
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+</body>
+</html>
